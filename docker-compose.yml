@@ -7,3 +7,5 @@ services:
     ports:
       - 8066:8080
       - 50000:50000
+    volumes:
+      - /github:/github
