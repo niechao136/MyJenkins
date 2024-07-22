@@ -1,0 +1,9 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    privileged: true
+    restart: always
+    ports:
+      - 8066:8080
+      - 50000:50000
