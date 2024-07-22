@@ -5,7 +5,19 @@ services:
     privileged: true
     restart: always
     ports:
+      - 8000:8000
+      - 8001:8001
+      - 8002:8002
+      - 8003:8003
+      - 8004:8004
+      - 8005:8005
+      - 8006:8006
+      - 8007:8007
+      - 8008:8008
+      - 8009:8009
       - 8066:8080
       - 50000:50000
     volumes:
-      - /github:/github
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - /usr/bin/docker-compose:/usr/bin/docker-compose
